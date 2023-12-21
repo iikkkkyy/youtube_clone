@@ -17,8 +17,22 @@ class _YoutubeAppCloneState extends State<YoutubeAppClone> {
       appBar: AppBar(
         title: SvgPicture.asset(
           'assets/youtube_icon/youtube_premium_logo.svg',
-          width: 150,
+          width: 110,
         ),
+        actions: <Widget>[
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.cast),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.notifications),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.search),
+          ),
+        ],
       ),
       body: const Center(
         child: Text('메인페이지'),
@@ -40,7 +54,6 @@ class _YoutubeAppCloneState extends State<YoutubeAppClone> {
             ),
           ),
           BottomNavigationBarItem(
-
             icon: SvgPicture.asset(
               'assets/youtube_icon/youtube_shorts.svg',
               height: 25,
@@ -70,7 +83,6 @@ class _YoutubeAppCloneState extends State<YoutubeAppClone> {
             ),
           ),
         ],
-
       ),
     );
   }
