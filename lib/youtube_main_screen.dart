@@ -34,8 +34,27 @@ class _YoutubeAppCloneState extends State<YoutubeAppClone> {
           ),
         ],
       ),
-      body: const Center(
-        child: Text('메인페이지'),
+      body: Container(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              TextButton(style: TextButton.styleFrom(
+
+              ),
+                  onPressed: () {},
+                  child: SvgPicture.asset(
+                    'assets/youtube_icon/youtube_compass.svg', width: 30,)),
+              TextButton(onPressed: () {}, child: Text('전체'), style:,),
+              TextButton(onPressed: () {}, child: Text('게임')),
+              TextButton(onPressed: () {}, child: Text('믹스')),
+              TextButton(onPressed: () {}, child: Text('실시간')),
+              TextButton(onPressed: () {}, child: Text('음악')),
+              TextButton(onPressed: () {}, child: Text('액션 어드벤쳐 게임')),
+            ],
+          ),
+        ),
+
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
